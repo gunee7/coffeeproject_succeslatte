@@ -51,7 +51,7 @@ public class Tab2_Adapter_Card extends ArrayAdapter<Tab2_Model_Card> {
             inflaterView.setTag( holder );
         }
 
-        holder.imageCoffeeView  .setImageDrawable(context.getResources().getDrawable(this.getItem(position).getImageCoffee(),null));
+        holder.imageCoffeeView  .setImageResource(this.getItem(position).getImageCoffee());
         holder.textCoffeeView   .setText         (this.getItem(position).getTextCoffee() );
 
         return inflaterView;
