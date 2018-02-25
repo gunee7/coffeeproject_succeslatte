@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.st1drawermenu.SubuMenu.QrcodeActivity">
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        
+        <ImageView
+            android:id="@+id/btn_xmark2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="155dp"
+            app:srcCompat="@drawable/accessdenied1"/>
+        
+        <ImageView
+            android:id="@+id/menu_image"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:src="@drawable/beverage1_icestrawberrysmoodi"/>
+        
+        <TextView
+            android:id="@+id/coffee_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@array/menu_latte_name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/slide_title1"
+            android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/coffee_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2900원"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical">
+        
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="384dp"
+            android:layout_height="146dp"
+            android:src="@drawable/qrcode"/>
+    
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
+
+

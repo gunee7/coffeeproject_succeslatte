@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+  
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+    
+                <ImageView
+                    android:id="@+id/promotion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    app:srcCompat="@drawable/promotion1"/>
+            </LinearLayout>
+            
+  
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="70dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+        
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+            
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="75dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/givecoffee"
+                        android:visibility="gone"/>
+            
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:visibility="gone"/>
+                </LinearLayout>
+        
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+            
+                    <ImageView
+                        android:id="@+id/intro_coffee"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/intromain_icecoffeehtml"/>
+            
+                    <TextView
+                        android:id="@+id/coffeetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="커피"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+        
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+            
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/givecoffee"
+                        android:visibility="gone"/>
+            
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="TextView"
+                        android:visibility="gone"/>
+                </LinearLayout>
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+        
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+            
+                    <ImageView
+                        android:id="@+id/intro_bean"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/intromain_bean"/>
+            
+                    <TextView
+                        android:id="@+id/beantext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="원두"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+        
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+            
+                    <ImageView
+                        android:id="@+id/intro_bingsu"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/intromain_icechocobingsu"/>
+            
+                    <TextView
+                        android:id="@+id/bingsutext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="빙수"/>
+                </LinearLayout>
+        
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+            
+                    <ImageView
+                        android:id="@+id/intro_beverage"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/intromain_icehismachachip"/>
+            
+                    <TextView
+                        android:id="@+id/beveragetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="음료"/>
+                </LinearLayout>
+    
+            </LinearLayout>
+    
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp">
+        
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+            
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/givecoffee"
+                        android:visibility="gone"/>
+            
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:visibility="gone"/>
+                </LinearLayout>
+        
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+            
+                    <ImageView
+                        android:id="@+id/intro_desert"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/intromain_bagel_plain_450x450"/>
+            
+                    <TextView
+                        android:id="@+id/deserttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="디저트"/>
+                </LinearLayout>
+        
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+            
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/givecoffee"
+                        android:visibility="gone"/>
+            
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="TextView"
+                        android:visibility="gone"/>
+                </LinearLayout>
+    
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
