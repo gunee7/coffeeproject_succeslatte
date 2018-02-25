@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -19,8 +20,10 @@ import com.example.st1drawermenu.NavPackage.Notices.CourseFragment;
 import com.example.st1drawermenu.NavPackage.Notices.ScheduleFragment;
 import com.example.st1drawermenu.NavPackage.Notices.StatisticsFragment;
 import com.example.st1drawermenu.R;
+import com.example.st1drawermenu.utils.ServerUtil;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -39,7 +42,6 @@ public class EventActivity extends AppCompatActivity {
     private List<Event> eventList;
 
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
@@ -48,6 +50,16 @@ public class EventActivity extends AppCompatActivity {
         eventList = new ArrayList<Event>();
         adapter = new EventListAdapter(getApplicationContext(), eventList);
         eventListView.setAdapter(adapter);
+
+        eventListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Toast.makeText(EventActivity.this, i+"번줄 서버 요청해야함", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
 
         final LinearLayout event = findViewById(R.id.event);
         btn_back = findViewById( R.id.btn_back );
@@ -59,7 +71,16 @@ public class EventActivity extends AppCompatActivity {
             }
         });
 
-        new BackgroundTask().execute();
+
+        ServerUtil.getEventList(EventActivity.this, new ServerUtil.JsonResponseHandler() {
+            @Override
+            public void onResponse(JSONObject json) {
+
+
+
+            }
+        });
+
     }
 
     class BackgroundTask extends AsyncTask<Void, Void, String> {
@@ -103,22 +124,7 @@ public class EventActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
             try {
-                JSONObject jsonObject = new JSONObject(result);
-                JSONArray jsonArray = jsonObject.getJSONArray("response");
-                int count = 0;
-                String eventContent, eventName, eventDate;
-                while (count < jsonArray.length()){
 
-                    JSONObject object = jsonArray.getJSONObject(count);
-                    eventContent = object.getString("eventContent");
-                    eventName = object.getString("eventName");
-                    eventDate = object.getString("eventDate");
-                    Event event = new Event(eventContent, eventName, eventDate);
-                    eventList.add(event);
-                    count++;
-                }
-
-                adapter.notifyDataSetChanged();
 
             } catch (Exception e) {
                 e.printStackTrace();

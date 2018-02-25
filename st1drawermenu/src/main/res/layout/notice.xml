@@ -13,8 +13,6 @@
         android:gravity="center"
         android:padding="10dp"
         android:textColor="#ffffff"
-        android:drawableStart="@drawable/ic_textsms_black_24dp"
-        android:drawableLeft="@drawable/ic_textsms_black_24dp"
         android:background="@color/bg_screen9"
         android:textStyle="bold"/>
     
