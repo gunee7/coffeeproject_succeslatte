@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/coffeeproject_succeslatte.iml" filepath="$PROJECT_DIR$/coffeeproject_succeslatte.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/coffeeproject_succeslatte.iml" filepath="$PROJECT_DIR$/.idea/coffeeproject_succeslatte.iml" />
       <module fileurl="file://D:\workspace-master\workspace-master\Lecher\Android\Work\part9.project\coffeeproject_succeslatte\coffeeproject_succeslatte.iml" filepath="D:\workspace-master\workspace-master\Lecher\Android\Work\part9.project\coffeeproject_succeslatte\coffeeproject_succeslatte.iml" />
+      <module fileurl="file://D:\work\coffeeproject_succeslatte\coffeeproject_succeslatte.iml" filepath="D:\work\coffeeproject_succeslatte\coffeeproject_succeslatte.iml" />
       <module fileurl="file://$PROJECT_DIR$/st1drawermenu/st1drawermenu.iml" filepath="$PROJECT_DIR$/st1drawermenu/st1drawermenu.iml" />
+      <module fileurl="file://D:\work\coffeeproject_succeslatte\st1drawermenu\st1drawermenu.iml" filepath="D:\work\coffeeproject_succeslatte\st1drawermenu\st1drawermenu.iml" />
       <module fileurl="file://D:\workspace-master\workspace-master\Lecher\Android\Work\part9.project\coffeeproject_succeslatte\st1drawermenu\st1drawermenu.iml" filepath="D:\workspace-master\workspace-master\Lecher\Android\Work\part9.project\coffeeproject_succeslatte\st1drawermenu\st1drawermenu.iml" />
       <module fileurl="file://D:\workspace\Lecher\Android\Work\part9.project\coffeeproject_succes\st2preference\st2preference.iml" filepath="D:\workspace\Lecher\Android\Work\part9.project\coffeeproject_succes\st2preference\st2preference.iml" />
       <module fileurl="file://D:\workspace\Lecher\Android\Work\part9.project\coffeeproject_succes\st3toolbar\st3toolbar.iml" filepath="D:\workspace\Lecher\Android\Work\part9.project\coffeeproject_succes\st3toolbar\st3toolbar.iml" />

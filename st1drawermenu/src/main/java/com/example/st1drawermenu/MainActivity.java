@@ -37,7 +37,7 @@ public class MainActivity extends AppBarMainActivity
 
     // 상수 
     private static final int REQUEST_CODE_LOGIN = 9999;
-    private static final int REQUEST_CODE_REGISTER = 9999;
+    private static final int REQUEST_CODE_REGISTER = 9998;
 
     private ViewPager pager;
     private TabLayout tabLayout;
