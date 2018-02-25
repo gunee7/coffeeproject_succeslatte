@@ -23,6 +23,7 @@ import com.example.st1drawermenu.Cart.CartActivity;
 import com.example.st1drawermenu.Fragment.Tab1.Tab1_Model_Card;
 import com.example.st1drawermenu.R;
 import com.example.st1drawermenu.SubuMenu.SubMenuActivity;
+import com.example.st1drawermenu.data.GlobalData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -148,7 +149,7 @@ public class Tab2Fragment extends Fragment {
                 });
 
                 final Tab2_Model_Card model = data2.get(position);
-                image.setImageDrawable( getResources().getDrawable(model.getImageCoffee(), null) );
+                image.setImageResource( model.getImageCoffee() );
                 name.setText( model.getTextCoffee() );
                 price.setText( model.getTextPrice() );
 
@@ -165,8 +166,9 @@ public class Tab2Fragment extends Fragment {
                 builder.setPositiveButton("결제하러 가기", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        GlobalData.cardList = (ArrayList<Tab2_Model_Card>) list;
+
                         Intent i = new Intent( getContext() , CartActivity.class);
-                        i.putParcelableArrayListExtra("cart", (ArrayList<Tab2_Model_Card>) list);
                         startActivity( i );
                     }
                 });

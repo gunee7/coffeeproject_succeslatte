@@ -61,7 +61,7 @@ public class CartAdapter extends ArrayAdapter<Tab2_Model_Card>{
         holder.coffeeName   .setText          (this.getItem(position).getTextCoffee() );
         holder.coffePrice   .setText          (this.getItem(position).getTextPrice()  );
         holder.coffeeCount  .setText          (this.getItem(position).getCountCoffee());
-        holder.coffeeImage  .setImageDrawable (context.getResources().getDrawable(this.getItem(position).getImageCoffee(),null));
+        holder.coffeeImage  .setImageResource (this.getItem(position).getImageCoffee());
 
         return inflaterView;
 

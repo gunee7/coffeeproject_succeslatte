@@ -14,6 +14,7 @@ import com.example.st1drawermenu.MainActivity;
 import com.example.st1drawermenu.NavPackage.Event.EventActivity;
 import com.example.st1drawermenu.R;
 import com.example.st1drawermenu.SubuMenu.QrcodeActivity;
+import com.example.st1drawermenu.data.GlobalData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,8 +42,7 @@ public class CartActivity extends AppCompatActivity {
 
         cartListview = findViewById( R.id.cart_listview );
 
-        Intent i = getIntent();
-        list = i.getParcelableArrayListExtra("cart");
+        list = GlobalData.cardList;
 
         data = MakeData( 0 , list.size()-1 );
 
