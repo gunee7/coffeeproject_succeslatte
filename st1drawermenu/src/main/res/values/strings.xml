@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">MenuWidget</string>
-    
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    
+
     <string name="action_settings">설정</string>
     <string name="action_franchise">점주페이지</string>
     <string name="action_home">홈페이지</string>
-    
+
     <string name="title_activity_login">Sign in</string>
     <string name="action_search">searching</string>
-    
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -34,11 +34,11 @@
     <string name="slide_1_title">Hello GiveCoffee</string>
     <string name="slide_1_desc">The easiest way to order coffee from your favourite givecoffee!</string>
     <string name="title_activity_sub_menu">SubMenuActivity</string>
-    
-    
+
+
     <string name="menu_size_base">Base</string>
     <string name="menu_size_sizeup">SizeUP</string>
-    
+
     <string name="give_Poor">Poor</string>
     <string name="give_Hungry">Hungry</string>
     <string name="give_Orphan">Orphan</string>

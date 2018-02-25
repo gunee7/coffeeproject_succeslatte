@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -68,6 +69,22 @@ public class NoticeMainActivity extends AppCompatActivity {
         noticeList = new ArrayList<Notice>();
         adapter = new NoticeListAdapter(getApplicationContext(), noticeList);
         noticeListView.setAdapter(adapter);
+
+
+        noticeListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Notice clickedNotice = noticeList.get(i);
+
+                Intent intent = new Intent(NoticeMainActivity.this, NoticeSubActivity.class);
+                intent.putExtra("공지", clickedNotice);
+                startActivity(intent);
+
+
+            }
+        });
+
 
         final Button scheduleButton = findViewById(R.id.scheduleButton);
         final Button courseButton = findViewById(R.id.courseButton);
@@ -174,7 +191,7 @@ public class NoticeMainActivity extends AppCompatActivity {
                     noticeContent = object.getString("noticeContent");
                     noticeName = object.getString("noticeName");
                     noticeDate = object.getString("noticeDate");
-                    Notice notice = new Notice(noticeContent, noticeName, noticeDate);
+                    Notice notice = new Notice(1, noticeContent, noticeName, noticeDate, "");
                     noticeList.add(notice);
                     count++;
                 }
