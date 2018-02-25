@@ -18,7 +18,7 @@
             android:layout_height="@dimen/customdp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:src="@drawable/ic_launcher_background"/>
+            android:src="@drawable/bag"/>
         
         <TextView
             android:id="@+id/text_coffee"
